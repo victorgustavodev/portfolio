@@ -1,0 +1,260 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: GR;
+}
+
+
+:root 
+{
+  --blue: #1e255d;
+  --white: #f5f6f7;
+  --black: #000;
+  --cyan: #46bdad;
+  --gray: #ededed;
+  --blue-dark: #172b3c;
+}
+
+/* -----id's presets----- */
+
+#gb-blue-dark
+{
+  font-family: GB;
+  color: var(--blue-dark);
+}
+
+#gb-cyan
+{
+  font-family: GB;
+  color: var(--cyan);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+@font-face {
+  font-family: "GR";
+  src: url("/assets/fonts/Gilroy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GB";
+  src: url("/assets/fonts/Gilroy-Bold.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "GSB";
+  src: url("/assets/fonts/Gilroy-SemiBold.ttf");
+}
+
+/* -----scroll top----- */
+
+#button-to-top
+{
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 4%;
+  right: 2%;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  background-color: var(--gray);
+}
+
+#button-to-top:hover
+{
+  filter:grayscale(1);
+}
+/* -----header----- */
+
+.header-content 
+{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--white);
+  z-index: 3;
+  padding: 0 2rem;
+}
+
+
+#logo-header
+{
+  font-size: 30px;
+  text-decoration: none;
+  font-family: GB;
+  color: var(--blue);
+
+}
+
+#nav-list 
+{
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+#nav-list li a 
+{
+  text-decoration: none;
+  font-family: GSB;
+  font-size: 20px;
+  color: var(--blue);
+}
+
+#flags-icon
+{
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* -----apresentation----- */
+
+.apresentation 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  padding: 8rem 20rem;
+  background: linear-gradient(234deg, #1e255d 0%, #111638 15%, #000 80%);
+}
+
+#flex-apresentation 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+.apresentation h1
+{
+  min-width: 44.5rem;
+  color: var(--cyan);
+  font-family: GB;
+  font-size: 100px;
+}
+
+.apresentation h1 span {
+  color: var(--white);
+  font-family: GB;
+  font-size: 100px;
+}
+
+.me-img
+{
+  width: 400px;
+  border-radius: 50%;
+}
+
+#link-social
+{
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  bottom: 12%;
+  right: 2%;
+}
+
+
+#link-social figure img
+{
+  width: 30px;
+  cursor: pointer;
+}
+
+/* -----about for me----- */
+
+#about
+{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 5% 10%;
+  gap: 5rem;
+}
+
+#about h1
+{
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+#about p
+{
+  font-size: 24px;
+  width: 66%;
+}
+
+.skills
+{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 66%;
+}
+
+.skill-strong, .skill-study
+{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skill-strong img
+{
+  width: 500px;
+}
+
+
+.skill-study img
+{
+  width: 282px;
+}
+
+#formation
+{
+  display: flex;
+  width: 33%;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteiner-about
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -----projetos----- */
+
+.projects
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 15vh;
+
+  background: linear-gradient(234deg, #1e255d 0%, #111638 15%, #000 80%);
+  color: white;
+  font-family: GB;
+  height: 90vh;
+  gap: 3rem;
+}
+
+.projects h1
+{
+  font-size: 80px;
+  margin-bottom: 2rem;
+}
+
+/* CARROSSEL */
