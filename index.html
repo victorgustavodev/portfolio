@@ -1,103 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VT</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <script src="assets/js/main.js"></script>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VG</title>
+    <!-- css -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
 
-  <body>
-    <header class="header-content">
-        <a id="logo-header" href="/">VG<span id="gb-cyan">.</span></a>
+<body>
 
-      <nav>
-        <ul id="nav-list">
-          <li><a href="#about">Sobre mim</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#contact">Contato</a></li>
+    <header class="">
+        <a href="#" class="logo">VG<span>.</span></a>
+
+        <ul class="navlist">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre mim</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
+            <li><a href="#services">Habilidades</a></li>
         </ul>
-      </nav>
-      
-      <div id="flags-icon">
-        <figure><img src="assets/img/icon-eua.svg" alt="botão de site versão Brasil"></figure>
-        <figure><img src="assets/img/icon-br.svg" alt="botão de site versão Estados Unidos"></figure>
-      </div>
 
+        <div class="bx bx-menu" id="menu-icon"></div>
     </header>
-
-    <section class="apresentation">
-      <div id="flex-apresentation">
-        <h1>
-          Desenvolvedor<br />
-          Full Stack <span>&</span><br />
-          UI/UX Designer
-        </h1>
-        <figure><img class="me-img" src="assets/img/eu-img.png" alt="imagem de Victor Gustavo"></figure>
-      </div>
-
-      <div id="link-social">
-        <figure><img src="assets/img/Icon-github.svg" alt=""></figure>
-        <figure><img src="assets/img/Icon-linkedin-white.svg" alt=""></figure>
-      </div>
-
-    </div>
-    </section>
-
-    <section id="about">
-      <h1>Sobre mim</h1>
-      <p>Me chamo Victor Gustavo, tenho 20 anos e sou desenvolvedor Full Stack, atualmente cursando <span id="gb-blue-dark">Sistemas para Internet</span> no Instituto Federal de Ciências e Tecnologia de Pernambuco (IFPE). Possuo habilidades em <span id="gb-blue-dark">HTML, CSS, JavaScript, MySQL, Svelte, Figma e Git.</span> Estou constantemente buscando aprimorar meus conhecimentos e acompanhar as tecnologias mais relevantes do mercado.</p>
-
-      <div class="conteiner-about">
-      <section class="skills">
-        <div class="skill-strong">
-          <p>🧠 Conhecimento em:</p>
-          <div>
-            <figure><img src="assets/img/Conhecimento em.png" alt="tecnologias que possuo conhecimento"></figure>
-          </div>
+    
+    <section class="home">
+        <div class="home-div">
+            <div class="home-text">
+                <p>Olá, me chamo</p>
+                <h1>Victor Gustavo</h1>
+                <h3>Desenvolvedor Front-end <br> <span>&</span> UX/UI Design </h3>
+            </div>
         </div>
+    </section>
 
-        <div class="skill-study">
-          <p>📚 Estudando:</p>
-          <div>
-            <figure><img src="assets/img/Estudando.png" alt="tecnologias em estudo"></figure>
-          </div>
+    <section class="about">
+        <div class="about-img">
+            <img src="src/img/eu-img.png" alt="foto no espelho">
         </div>
-      </section>
-      <figure id="formation"><img src="assets/img/Faculdade + Técnico.png" alt=""></figure>
-    </div>
+        <div class="about-text">
+            <h2>Sobre mim</h2>
+            <h4>Simplesmente apaixonado por programação</h4>
+            <p>• 2º Período | Tecnólogo em <span>Sistemas para Internet</span> pelo IFPE               
+            </p>
+            <p>• Formado | Técnico em  <span>Desenvolvimento de Sistemas</span> pela ETE</p>
+            <p>• Estudando <span>React</span>, <span>Next</span> e <span>Node</span>
+
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/victorgs-dev/" target="_blank" class="btn-socials"><span><i class="bx bxl-linkedin"></i></span></a>
+                <a href="https://github.com/victorgustavodev" target="_blank" class="btn-socials"><span><i class="bx bxl-github"></i></span></a>
+                <a href="https://www.instagram.com/victorgs03" target="_blank" class="btn-socials"><span><i class="bx bxl-instagram"></i></span></a>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-      <h1>Projetos</h1>
-      <p>Confira abaixo meus principais <span id="gb-cyan">projetos</span></p>
-      <span><img src="assets/img/hand-icon.svg" alt="icone de mão"></span>
+    <section class="portfolio">
+        <div class="main-text">
+            <h2>Projetos</h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="row"><img src="src/img/project-01.png" alt="ilustração do projeto"></img>
+            
+                <div class="layer">
+                    <h5>Nome do Projeto</h5>
+                    <p>Tecnologias Utilizadas</p>
+                    <span><i class="bx bxl-html5"></i><i class="bx bxl-css3"></i><i class="bx bxl-javascript"></i></span>
+                </div>
+            </div>
+            <div class="row"><img src="src/img/project-01.png" alt="ilustração do projeto"></img>
+            
+                <div class="layer">
+                    <h5>Nome do Projeto</h5>
+                    <p>Tecnologias Utilizadas</p>
+                    <span><i class="bx bxl-html5"></i><i class="bx bxl-css3"></i><i class="bx bxl-javascript"></i></span>
+                </div>
+            </div>
+            <div class="row"><img src="src/img/project-01.png" alt="ilustração do projeto"></img>
+            
+                <div class="layer">
+                    <h5>Nome do Projeto</h5>
+                    <p>Tecnologias Utilizadas</p>
+                    <span><i class="bx bxl-html5"></i><i class="bx bxl-css3"></i><i class="bx bxl-javascript"></i></span>
+                </div>
+            </div>
+            <div class="row"><img src="src/img/project-01.png" alt="ilustração do projeto"></img>
+            
+                <div class="layer">
+                    <h5>Nome do Projeto</h5>
+                    <p>Tecnologias Utilizadas</p>
+                    <span><i class="bx bxl-html5"></i><i class="bx bxl-css3"></i><i class="bx bxl-javascript"></i></span>
+                </div>
+            </div>
+            <div class="row"><img src="src/img/project-01.png" alt="ilustração do projeto"></img>
+            
+                <div class="layer">
+                    <h5>Nome do Projeto</h5>
+                    <p>Tecnologias Utilizadas</p>
+                    <span><i class="bx bxl-html5"></i><i class="bx bxl-css3"></i><i class="bx bxl-javascript"></i></span>
+                </div>
+            </div>
+            <div class="row"><img src="src/img/project-01.png" alt="ilustração do projeto"></img>
+            
+                <div class="layer">
+                    <h5>Nome do Projeto</h5>
+                    <p>Tecnologias Utilizadas</p>
+                    <span><i class="bx bxl-html5"></i><i class="bx bxl-css3"></i><i class="bx bxl-javascript"></i></span>
+                </div>
+            </div>
+
+
+
+        </div>
     </section>
+<!-- js script -->
+<script src="src/js/script.js"></script>
 
-    <section id="contact">
+</body>
 
-      <h1>Contato</h1>
-      <h3>🔥 Entre em contato comigo através das minhas redes sociais abaixo:  </h3>
-      <div class="link-contact">
-        <div>
-        <a href="https://www.linkedin.com/in/victorgs-dev/" target="_blank"><img src="/assets/img/Icon-github-black.svg" alt="icone linkedin">www.linkedin.com/in/victorgs-dev</a>
-        <a href="https://www.linkedin.com/in/victorgs-dev/" target="_blank"><img src="/assets/img/Icon-linkedin.svg" alt="icone linkedin">www.linkedin.com/in/victorgs-dev</a>
-        <a href="https://www.instagram.com/victorgs03" target="_blank"><img src="/assets/img/icon-insta.svg" alt="icone linkedin">@victorgs_03</a>
-        <a href="mailto:victorgustavo.dev@gmail.com" target="_blank"><img src="/assets/img/icon-email.svg" alt="icone linkedin">victorgustavo.dev@gmail.com</a>
-      <button id="btn-curriculo">baixar currículo</button>
-    </div>
-    </div>
-
-    </section>
-
-    <footer>
-      <a id="logo-footer" href="#">VG<span id="gb-cyan">.</span></a>
-      <p>© 2024 Victor Gustavo. Todos os direitos reservados.</p>
-      <span></span>
-    </footer>
-
-    <img id="button-to-top" src="assets/img/icon-top.svg" alt="">
-  </body>
 </html>
