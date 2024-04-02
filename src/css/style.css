@@ -114,6 +114,7 @@ section {
   font-size: 48px;
   color: #46BDAD;
 }
+
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -178,9 +179,9 @@ section {
   background-color: #ECECEC;
 }
 
-.main-text {
-  text-align: center;
+.main-text h2 {
   font-size: 48px;
+  text-align: center;
 }
 
 .portfolio-content {
@@ -241,10 +242,95 @@ section {
   height: 100%;
 }
 
+.main-text {
+  text-align: center;
+}
+
+.main-text h2 {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.services-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  max-height: 300px;
+  min-height: 200px;
+  text-align: center;
+  background: #ECECEC;
+  padding: 35px 45px;
+  border-radius: 8px;
+  transition: all 0.45s ease;
+}
+
+.s-icons i {
+  font-size: 36px;
+}
+
+.box h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.box:hover {
+  transform: translateY(-8px);
+}
+
+.end {
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 20px 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #ECECEC;
+}
+
+.last-text {
+  font-size: 17px;
+}
+
+#top {
+  position: fixed;
+  bottom: 2rem;
+  padding: auto;
+  right: 2rem;
+}
+
+#top.hide-top {
+  display: none;
+}
+
+#top.show-top {
+  display: block;
+}
+
+#top i {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 24px;
+  background: #46BDAD;
+  transition: all 0.45s ease;
+}
+
+#top i:hover {
+  transform: translateY(-8px);
+}
+
 @media (max-width: 1100px) {
-  :root {
-    transition: 0.1s;
-  }
   .home-text h3 {
     font-size: 1.6rem;
   }
