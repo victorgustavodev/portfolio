@@ -141,6 +141,13 @@ section {
     }
 }
 
+#dot
+{
+    font-weight: 700;
+    color: black;
+    margin-right: 0.5rem;
+}
+
 .about-text
 {
     h2
@@ -233,6 +240,7 @@ section {
     {
         max-width: 350px;
         min-width: 100%;
+        min-height: 212.52px;
         max-height: 350px;
         border-radius: 10px;
         display: block;
