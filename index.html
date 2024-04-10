@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="src/css/style.css">
     <!-- icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
+    <header class="header">
+        <a href="#" class="logo header-sr">VG<span>.</span></a>
 
-    <header class="">
-        <a href="#" class="logo">VG<span>.</span></a>
-
-        <ul class="navlist">
+        <ul class="navlist header-sr">
             <li><a href="#home">Início</a></li>
             <li><a href="#about">Sobre mim</a></li>
             <li><a href="#projects">Projetos</a></li>
@@ -26,44 +27,48 @@
     </header>
     
     <section class="home" id="home">
-        <div class="home-div">
+        <div class="home-div home-div-sr">
             <div class="home-text">
-                <p>Olá, me chamo</p>
-                <h1>Victor Gustavo</h1>
-                <h3>Desenvolvedor Front-end <br> <span>&</span> UX/UI Design </h3>
+                <p class="home1-sr">Olá, me chamo</p>
+                <h1 class="home2-sr">Victor Gustavo</h1>
+                <h3 class="home3-sr">Desenvolvedor Full Stack<br> <span>&</span> UX/UI Design </h3>
             </div>
         </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="about-img">
+    <section class="about " id="about">
+        <div class="about-img about-sr">
             <img src="src/img/eu-img.png" alt="foto no espelho">
         </div>
-        <div class="about-text">
-            <h2>Sobre mim</h2>
-            <h4>Transformando códigos em experiências digitais memoráveis.</h4>
-            <p><span id="dot">•</span> 2º Período | Tecnólogo em <span>Sistemas para Internet</span> pelo IFPE               
+        <div class="about-text ">
+            <h2 class="about-sr">Sobre mim</h2>
+            <h4 class="about-sr">Transformando códigos em experiências digitais memoráveis.</h4>
+            <p class="about-sr"><span id="dot">•</span> 2º Período | Tecnólogo em <span>Sistemas para Internet</span> pelo IFPE               
             </p>
-            <p><span id="dot">•</span> Formado | Técnico em  <span>Desenvolvimento de Sistemas</span> pela ETE</p>
-            <p><span id="dot">•</span> Estudando <span>React</span>, <span>Next</span> e <span>Node</span>
+            <p class="about-sr"><span id="dot">•</span> Formado | Técnico em  <span>Desenvolvimento de Sistemas</span> pela ETE</p>
+            <p class="about-sr"><span id="dot">•</span> Estudando <span>React</span>, <span>Next</span> e <span>Node</span>
 
             <div class="socials">
-                <a href="https://www.linkedin.com/in/victorgs-dev/" target="_blank" class="btn-socials"><span><i class="bx bxl-linkedin"></i></span></a>
-                <a href="https://github.com/victorgustavodev" target="_blank" class="btn-socials"><span><i class="bx bxl-github"></i></span></a>
-                <a href="https://www.instagram.com/victorgs03" target="_blank" class="btn-socials"><span><i class="bx bxl-instagram"></i></span></a>
+                <a href="https://www.linkedin.com/in/victorgs-dev/" target="_blank" class="btn-socials socials1-sr"><span><i class="bx bxl-linkedin"></i></span></a>
+                <a href="https://github.com/victorgustavodev" target="_blank" class="btn-socials socials2-sr"><span><i class="bx bxl-github"></i></span></a>
+                <a href="https://www.instagram.com/victorgs03" target="_blank" class="btn-socials socials3-sr"><span><i class="bx bxl-instagram"></i></span></a>
             </div>
         </div>
     </section>
 
     <section class="portfolio" id="projects">
-        <div class="main-text">
+        <div class="main-text main-text-sr">
             <h2>Projetos</h2>
         </div>
-        <div class="portfolio-content">
+        <div class="portfolio-content portfolio-content-sr">
             <div class="row"><img src="src/img/project-01.png" alt="ilustração do projeto"></img>
             
                 <div class="layer">
-                    <h5>Nome do Projeto</h5>
+                    <h5>Cloud.io</h5>
+                    <div>
+                        <a href="https://cloud-vt.netlify.app" target="_blank"><i class="bx bx-world"></i></a>
+                        <a href="https://github.com/victorgustavodev/Cloud.vt" target="_blank"><i class="bx bxl-github"></i></a>
+                    </div>
                     <p>Tecnologias Utilizadas</p>
                     <span><i class="bx bxl-html5"></i><i class="bx bxl-css3"></i><i class="bx bxl-javascript"></i></span>
                 </div>
@@ -71,43 +76,28 @@
             <div class="row"><img src="src/img/project-02.png" alt="ilustração do projeto"></img>
             
                 <div class="layer">
-                    <h5>Nome do Projeto</h5>
+                    <h5>Calculadora Apple</h5>
+                    <div>
+                        <a href="https://calculadora-vt.netlify.app" target="_blank"><i class="bx bx-world"></i></a>
+                        <a href="https://github.com/victorgustavodev/Calculator-JS" target="_blank"><i class="bx bxl-github"></i></a>
+                    </div>
                     <p>Tecnologias Utilizadas</p>
                     <span><i class="bx bxl-html5"></i><i class="bx bxl-css3"></i><i class="bx bxl-javascript"></i></span>
                 </div>
             </div>
-            <div class="row"><img src="src/img/project-01.png" alt="ilustração do projeto"></img>
+            <div class="row"><img src="src/img/em-desenv.png" alt="ilustração do projeto"></img>
             
                 <div class="layer">
-                    <h5>Nome do Projeto</h5>
-                    <p>Tecnologias Utilizadas</p>
-                    <span><i class="bx bxl-html5"></i><i class="bx bxl-css3"></i><i class="bx bxl-javascript"></i></span>
+                    <h5>Projeto em Desenvolvimento <br>⌛</h5>
+                    <!-- <div>
+                        <a href="" target="_blank"><i class="bx bx-world"></i></a>
+                        <a href="" target="_blank"><i class="bx bxl-github"></i></a>
+                    </div> -->
+                    <!-- <p>Tecnologias Utilizadas</p> -->
+                    <!-- <span><i class="bx bxl-html5"></i><i class="bx bxl-css3"></i><i class="bx bxl-javascript"></i></span> -->
                 </div>
             </div>
-            <div class="row"><img src="src/img/project-01.png" alt="ilustração do projeto"></img>
-            
-                <div class="layer">
-                    <h5>Nome do Projeto</h5>
-                    <p>Tecnologias Utilizadas</p>
-                    <span><i class="bx bxl-html5"></i><i class="bx bxl-css3"></i><i class="bx bxl-javascript"></i></span>
-                </div>
-            </div>
-            <div class="row"><img src="src/img/project-01.png" alt="ilustração do projeto"></img>
-            
-                <div class="layer">
-                    <h5>Nome do Projeto</h5>
-                    <p>Tecnologias Utilizadas</p>
-                    <span><i class="bx bxl-html5"></i><i class="bx bxl-css3"></i><i class="bx bxl-javascript"></i></span>
-                </div>
-            </div>
-            <div class="row"><img src="src/img/project-01.png" alt="ilustração do projeto"></img>
-            
-                <div class="layer">
-                    <h5>Nome do Projeto</h5>
-                    <p>Tecnologias Utilizadas</p>
-                    <span><i class="bx bxl-html5"></i><i class="bx bxl-css3"></i><i class="bx bxl-javascript"></i></span>
-                </div>
-            </div>
+
 
 
 
@@ -116,10 +106,10 @@
 
     <section class="services" id="services">
         <div class="main-text">
-            <h2>Habilidades</h2>
+            <h2 class="h2-sr">Habilidades</h2>
         </div>
 
-        <div class="services-content">
+        <div class="services-content services-content-sr">
             <div class="box">
                 <div class="s-icons">
                     <i class="bx bxl-html5"></i>
@@ -172,30 +162,42 @@
 
             <div class="box">
                 <div class="s-icons">
-                    <i class="bx bxl-git"></i>
-                </div>
-                <h3>Git</h3>
-            </div>
-
-            <div class="box">
-                <div class="s-icons">
                     <i class="bx bxl-tux"></i>
                 </div>
                 <h3>Linux</h3>
             </div>
 
-            <div class="box">
+            <div class="box cyan">
                 <div class="s-icons">
                     <i class="bx bxl-react"></i>
                 </div>
                 <h3>React</h3>
+                <span>( studying )</span>
             </div>
+
+            <div class="box cyan">
+                <div class="s-icons">
+                    <i class="bx bxl-nodejs"></i>
+                </div>
+                <h3>Node JS</h3>
+                <span>( studying )</span>
+            </div>
+
+            <div class="box cyan">
+                <div class="s-icons">
+                    <i class="bx bxl-aws"></i>
+                </div>
+                <h3>AWS Services</h3>
+                <span>( studying )</span>
+            </div>
+
+            
         </div>
     </section>
 
     <footer class="end">
         <div class="last-text">
-            <p>Copyright &#169; 2024 by Victor Gustavo. Todos os direitos reservados.</p>
+            <p>Copyright &#169; 2024 by <a href="https://www.linkedin.com/in/victorgs-dev/">Victor Gustavo</a>. Todos os direitos reservados.</p>
         </div>
     </footer>
 
