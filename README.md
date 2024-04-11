@@ -21,6 +21,7 @@
 - SASS
 - JAVASCRIPT
 - FIGMA
+- API (ScrollReveal) => https://scrollrevealjs.org/
 
 <h2 id="started">🚀 Getting started</h2>
 
