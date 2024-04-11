@@ -130,17 +130,20 @@ section {
 }
 
 .about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 10rem;
 }
 
 .about-img img {
-  width: 430px;
-  height: 430px;
+  width: 350px;
   border-radius: 10px;
   box-shadow: black 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all 0.5s;
+}
+.about-img img:hover {
+  transform: translateY(-8px);
+  transform: rotate(10deg);
 }
 
 #dot {
@@ -384,16 +387,15 @@ section {
     height: 87vh;
   }
   .about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     align-items: center;
     gap: 5rem;
   }
   .about-img img {
-    width: 350px;
-    height: 350px;
+    width: 300x;
     border-radius: 10px;
     box-shadow: black 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: all 0.5s;
   }
   .portfolio-content {
     display: grid;
