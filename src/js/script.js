@@ -1,9 +1,6 @@
 const header = document.querySelector("header");
 
-window.addEventListener ("scroll", function() {
-    header.classList.toggle ("sticky", window.scrollY > 40)
-});
-
+// menu mobile
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
@@ -14,6 +11,11 @@ menu.onclick = () => {
     }
     
 }
+
+// se caso o scroll atingir 90px no eixo y, a class 'sticky' é adicionada ao header
+window.addEventListener ("scroll", function() {
+    header.classList.toggle ("sticky", window.scrollY > 40)
+});
 
 window.onscroll = () => {
     menu.classList.remove('bx-x');
@@ -31,7 +33,7 @@ window.onload = () => {
     topo.classList.toggle ("hide-top");
 }
 
-// scrollreveal
+// API (ScrollReveal) para animação dos elementos durante a rolagem
 
 window.sr = ScrollReveal({reset : true});
 
@@ -69,8 +71,6 @@ sr.reveal('.about-sr', {
     origin: 'right',
 })
 
-//icons social media 
-
 sr.reveal('.socials1-sr', {
     duration: 1500,
     delay: 70,
@@ -91,6 +91,7 @@ sr.reveal('.socials3-sr', {
     origin: 'bottom',
     distance: '30px'
 })
+
 
 
 sr.reveal('.main-text-sr', {
